@@ -47,3 +47,11 @@ resource "azurerm_subnet" "inlogik_private_subnet" {
   virtual_network_name = azurerm_virtual_network.inlogik_vnet.name
   address_prefixes     = ["10.0.2.0/24"]
 }
+
+resource "azurerm_container_registry" "inlogik_acr" {
+  name                = "inlogikacr"
+  resource_group_name = azurerm_resource_group.inlogik_rg.name
+  location            = azurerm_resource_group.inlogik_rg.location
+  sku                 = "Standard"
+  admin_enabled       = true
+}
