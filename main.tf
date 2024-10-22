@@ -55,3 +55,21 @@ resource "azurerm_container_registry" "inlogik_acr" {
   sku                 = "Standard"
   admin_enabled       = true
 }
+
+resource "azurerm_kubernetes_cluster" "inlogikaks" {
+  name                = "inlogikaks"
+  location            = azurerm_resource_group.inlogik_rg.location
+  resource_group_name = azurerm_resource_group.inlogik_rg.name
+  dns_prefix          = "inlogikaks"
+
+  default_node_pool {
+    name                   = "inlogikaks"
+    node_count             = 1
+    vm_size                = "standard_d2pls_v5"
+    node_public_ip_enabled = true
+  }
+
+  identity {
+    type = "SystemAssigned"
+  }
+}
