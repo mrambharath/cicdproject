@@ -12,7 +12,6 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '726cd04e-5322-44e8-b964-b0b82e9ea5ac'
   imageRepository: 'cicddemo'
   containerRegistry: 'inlogikacr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
