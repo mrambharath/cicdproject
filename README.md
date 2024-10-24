@@ -27,3 +27,6 @@ Azure Repo screenshot,
 Azurepipeline screenshot,
 ![Screen Shot 2024-10-24 at 4 11 52 PM](https://github.com/user-attachments/assets/a5dbe053-21a3-425d-baad-462523645f1c)
 
+ArgoCD screenshot,
+![Screen Shot 2024-10-24 at 4 13 33 PM](https://github.com/user-attachments/assets/a6943b15-5174-4b9e-85d1-05040df78285)
+
