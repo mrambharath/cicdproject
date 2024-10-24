@@ -1,8 +1,8 @@
 # cicdproject
 This repo is for inlogik CICD demo project
 
-Resources are created with Terraform
-CI Process : Azure pipeline will look for changes in appcode repo in Azure Repos and start the build stages
+Resources are created with Terraform.
+CI Process : Azure pipeline will look for changes in appcode repo from Azure Repos and start the below stages
 Build : Build the Image
 Push : Push the Image to ACR
 Update : Update the latest image tag in deployment.yaml file
