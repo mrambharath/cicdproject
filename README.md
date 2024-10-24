@@ -15,3 +15,5 @@ CI-CD Process Flow:
 
 ![inlogik cicd automation (3)](https://github.com/user-attachments/assets/7d17cfca-0e1a-476b-94b1-1777de088731)
 
+As I have done my code chages in Azure Repo, i have replicated the code base in Github. Please find the screenshot of Azure Devops and ArgoCD.
+
