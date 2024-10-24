@@ -13,5 +13,5 @@ Argocd is deployed in K8's cluster with namespace Argocd
 
 CI-CD Process Flow:
 
-![inlogik cicd automation (1)](https://github.com/user-attachments/assets/9662ec84-bb41-43d4-bca4-de752981112d)
+![inlogik cicd automation (2)](https://github.com/user-attachments/assets/9718a046-7f26-47ec-a273-a3579fc0e7e1)
 
