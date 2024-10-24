@@ -24,3 +24,6 @@ ACR with images pushed as part of CI automation,
 Azure Repo screenshot,
 ![Screen Shot 2024-10-24 at 4 09 53 PM](https://github.com/user-attachments/assets/464f12eb-d315-4f7e-9a4e-7e985709326a)
 
+Azurepipeline screenshot,
+![Screen Shot 2024-10-24 at 4 11 52 PM](https://github.com/user-attachments/assets/a5dbe053-21a3-425d-baad-462523645f1c)
+
