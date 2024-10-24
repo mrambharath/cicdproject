@@ -17,3 +17,7 @@ CI-CD Process Flow:
 
 As I have done my code chages in Azure Repo, i have replicated the code base in Github. Please find the screenshot of Azure Devops and ArgoCD.
 
+ACR with images pushed as part of CI automation,
+
+![Screen Shot 2024-10-24 at 4 06 35 PM](https://github.com/user-attachments/assets/8f13a5e4-f3db-4093-a988-0f06bf9a90b2)
+
