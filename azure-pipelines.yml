@@ -3,7 +3,9 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- main
+  paths:
+    include:
+      - aspnetapp/*
 
 resources:
 - repo: self
@@ -16,7 +18,7 @@ variables:
   tag: '$(Build.BuildId)'
 
 pool:
- name: 'demoagent'
+ name: 'demoagent1'
 
 stages:
 - stage: Build
@@ -33,10 +35,12 @@ stages:
         command: 'build'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
+        arguments: '--platform linux/amd64'
+        
 - stage: Push
   displayName: Push
   jobs:
-  - job: Build
+  - job: Push
     displayName: Push
     steps:
     - task: Docker@2
@@ -46,3 +50,16 @@ stages:
         repository: '$(imageRepository)'
         command: 'push'
         tags: '$(tag)'
+        
+- stage: updatemanifest
+  displayName: updatemanifest
+  jobs:
+  - job: update
+    displayName: update
+    steps:
+
+    - task: ShellScript@2
+      inputs:
+          scriptPath: 'scripts/updatek8manifest.sh'
+          args: '$(pat) $(imageRepository) $(tag)'
+      
